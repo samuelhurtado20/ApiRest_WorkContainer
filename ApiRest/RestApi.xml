@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RestApi</name>
+    </assembly>
+    <members>
+        <member name="T:RestApi.Controllers.CustomerController">
+            <summary>
+            Customer API
+            </summary>
+        </member>
+        <member name="M:RestApi.Controllers.CustomerController.#ctor(Microsoft.Extensions.Logging.ILogger{RestApi.Controllers.CustomerController},DataAccess.Interfaces.IWorkContainer)">
+            <summary>
+            
+            </summary>
+            <param name="logger"></param>
+            <param name="workContainer"></param>
+        </member>
+        <member name="M:RestApi.Controllers.CustomerController.GetAll">
+            <summary>
+            Get all customers
+            </summary>
+            <returns>All customers</returns>
+            <response code="200">Successful operation</response>
+            <response code="404">Elements not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+        <member name="M:RestApi.Controllers.CustomerController.GetSingle(System.Guid)">
+            <summary>
+            Get a single customer by Guid
+            </summary>
+            <param name="id"></param>
+            <returns>A single customer</returns>
+            <response code="200">Successful operation</response>
+            <response code="400">Invalid ID supplied</response>
+            <response code="404">Element not found</response>
+            <response code="500">Internal server error</response>
+        </member>
+    </members>
+</doc>
